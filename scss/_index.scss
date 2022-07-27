@@ -1,0 +1,74 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #E9E9AF;
+    text-align: center;
+}
+
+.descBoden, .h2index{
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    border-color: #000;
+    border-style: solid;
+}
+
+//desktop//
+
+@media only screen and (min-width: 1200px){
+
+        .gridIndex{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "horda balada viento cielo coronel salvatierra uruguaya rio";
+            justify-items: center;
+            align-items: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+         /* GRID AREAS DEL INDEX */
+
+    .tapaHorda{
+        grid-area: horda;
+    }
+
+    .tapaBalada{
+        grid-area: balada;
+    }
+
+    .tapaViento{
+        grid-area: viento;
+    }
+
+    .tapaCielo{
+        grid-area: cielo;
+    }
+
+    .tapaCoronel{
+        grid-area: coronel;
+    }
+
+    .tapaSalvatierra{
+        grid-area: salvatierra;
+    }
+
+    .tapaUruguaya{
+        grid-area: uruguaya;
+    }
+
+    .tapaRio{
+        grid-area: rio;
+    }
+
+        .tapa:hover{
+            transform: translateY(-20px);
+        }
+}
